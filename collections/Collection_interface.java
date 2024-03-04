@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.ListIterator;
+import java.util.Set;
 import java.util.TreeSet;
 
 
@@ -65,6 +67,26 @@ public class Collection_interface {
         // You cannot call it immediately after a call to add().It can be called only once after a next or previous.
         System.out.println(mylist);
        
+        // Working With Sets
+        Set<String> names;
+        names = new HashSet<String>();
+        //names = new TreeSet<String>(); This is for visiting elements in a sorted order
+
+        names.add("Romeo");
+        names.add("Michael");
+        System.out.println(names);
+
+        if(names.contains("Michael")){
+            System.out.println("True");
+        }
+
+        for(String name: names){ // A loop to visit all elements of a set
+            System.out.println(name);
+        }
+
+        names.remove("Romeo"); //It is not an error to remove an element that is not present.
+        // The method call has no effect
+        System.out.println(names);
         
     }
 }
