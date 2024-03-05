@@ -3,7 +3,9 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.ListIterator;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 
@@ -88,6 +90,24 @@ public class Collection_interface {
         // The method call has no effect
         System.out.println(names);
         
+        // Working with Maps
+        Map<String, Integer> scores;
+        scores = new TreeMap<String, Integer>();
+
+        scores.put("Jackson", 1); // Adds keys and values to the map
+        scores.put("Francis", 2);
+        scores.put("Samuel", 3);
+
+        int k = scores.get("Jackson"); // Get the value associated with a key
+        System.out.println(k);
+        System.out.println(scores.toString()); // Prints the key string and integer value.
+
+        scores.remove("Jackson");
+
+        for(String key: scores.keySet()){ // Iterate through all map keys and values
+            Integer value = scores.get(key);
+            System.out.println(key + "=" + value);
+        }
     }
 }
 
