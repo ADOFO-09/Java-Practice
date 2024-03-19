@@ -20,7 +20,7 @@ public class MeanSD {
         n = scan.nextInt();
         int[] x = new int[n];
         System.out.println("Enter the integers:");
-        for(int i=0; i<5; i++){
+        for(int i=0; i<n; i++){
             x[i] = scan.nextInt();
             add += x[i];          
         }
@@ -29,7 +29,7 @@ public class MeanSD {
          System.out.println("The mean is: " + mean); // Mean Calculated
         // for(int i=0; i<5; i++) sum_diff += Math.pow(x[i] - mean, 2);
         int i = 0;
-        while(i < 5){
+        while(i < n){
             sum_diff += Math.pow(x[i] - mean, 2);
             i++;  
         }

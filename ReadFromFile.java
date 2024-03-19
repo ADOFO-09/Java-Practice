@@ -16,7 +16,7 @@ public class ReadFromFile {
         String textCombine = username + ":" + password;
 
         try{
-            File myObj = new File("D:/code/VS-Java/Filef1.txt");
+            File myObj = new File("D:/code/OOP PRACTICE/Java-Practice/Filef1.txt");
             Scanner myReader = new Scanner(myObj);
             boolean isValidUser = false;
             while(myReader.hasNextLine()){
