@@ -1,4 +1,1 @@
-Kofi:1234
-Ama:5678
-Adwoa:101112
-Kwabena:131415
+Emmanuel:1234

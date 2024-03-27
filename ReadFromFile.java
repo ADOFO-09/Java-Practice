@@ -25,7 +25,7 @@ public class ReadFromFile {
                     isValidUser = true;
                     break;
                 }
-            }
+            }    
             myReader.close();
             if(isValidUser){
                 System.out.println("Login successful");
